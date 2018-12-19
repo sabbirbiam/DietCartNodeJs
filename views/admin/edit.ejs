@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>EDIT</h2>
+	<a href="/admin">Back</a>
+	<br/><br/>
+	<form method="post">
+		<input type="hidden" name="id" value="<%= product.id%>">
+		<table>
+			<tr>
+				<td>PRODUCT NAME</td>
+				<td><input type="text" name="productname" value="<%= product.productname%>" /></td>
+			</tr>
+			<tr>
+				<td>PRODUCT PRICE</td>
+				<td><input type="text" name="productprice" value="<%= product.productprice%>" /></td>
+            </tr>
+            <tr>
+				<td>PRODUCT TYPE</td>
+				<td><input type="text" name="producttype" value="<%= product.productname%>" /></td>
+            </tr>
+
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Update" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

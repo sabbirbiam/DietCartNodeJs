@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>EDIT</h2>
+	<a href="/home">Back</a>
+	<br/><br/>
+	<form method="post">
+			 
+			<input type="hidden" name="id" value="<% if(typeof user !== 'undefined'){ %><%= user.id %><% } %>">
+			 
+		<table>
+            <tr>
+                <td>FIRSTNAME</td>
+                 
+                <td><input type="text" name="firstname" value="<% if(typeof user !== 'undefined'){ %><%= user.firstname %><% } %>" />
+			</td>
+            </tr>
+            <tr>
+                <td>LASTNAME</td>
+                
+                <td><input type="text" name="lastname" value="<% if(typeof user !== 'undefined'){ %><%= user.lastname %><% } %>" /></td>
+            </tr>
+            <tr>
+                <td>EMAIL</td>
+                
+                <td><input type="text" name="email" value="<% if(typeof user !== 'undefined'){ %><%= user.email %><% } %>" /></td>
+             </tr>
+            <tr>
+				<td>USERNAME</td>
+				 
+				<td><input type="text" name="username" value="<% if(typeof user !== 'undefined'){ %><%= user.username %><% } %>" /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Update" /></td>
+			</tr>
+		</table>
+	</form>
+	<% if(typeof errs !== 'undefined'){ %>
+		<% for(var i = 0; i < errs.length; i++){ %>
+			<p><%= errs[i].message %></p>
+		<% } %>
+	<% } %>
+</body>
+</html>

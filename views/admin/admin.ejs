@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>ADMIN HOME</h2>
+	<h3>Welcome <%= user.username %></h3>
+	<a href="/admin/add">Create New</a>
+	<br/><br/>
+	<table border="1">  
+		<tr>
+			<th>ID</th>
+			<th>NAME</th>
+			<th>IMAGE</th>
+			<th>PRICE</th>
+		</tr>
+		<% for(var i = 0; i < productList.length; i++) { %>
+		<tr>
+			<td><%= productList[i].id %></td>
+            <td><%= productList[i].name %></td>
+            <td><%= productList[i].image %></td>
+			<td><%= productList[i].price %></td>
+			<td><a href="/admin/edit/<%= productList[i].id %>">Edit</a> | <a href="/admin/delete/<%= productList[i].id %>">Delete</a> | <a href="/admin/view/<%= productList[i].id %>">Details</a></td>
+		</tr>
+		<% } %>
+	</table>
+</body>
+</html>

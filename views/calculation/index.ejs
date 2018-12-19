@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="cal.js"></script>
+  <style type="text/css">
+  body {
+     margin: 0;
+     background: url(https://wallpaperscraft.com/image/macbook_apple_computer_laptop_computer_mouse_93239_1920x1080.jpg);
+     /*background-size: 1900px 650px;*/
+     background-position: center;
+     background-size: cover;
+     /*background-repeat:no-repeatdisplay: compact;*/
+ }
+     .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+     .navbar-right{
+     	padding: 0;
+     	padding-top: 7px;
+     	
+     }  
+     #section1{
+     	color: black;
+     }
+     .sidenav{
+     	padding-left: 2px;
+     	width: 220px;
+
+     }
+     .nav-stacked{
+     	margin-top: 5px;
+     }
+     .nav-stacked a {
+     	color: black;
+     }
+     /*.nav-stacked li .active 
+     {
+    background-color: red;
+}*/
+
+.nav-pills li:nth-of-type(1) {
+	background-color: black;
+
+	}
+
+.nav-pills li:nth-of-type(1) a {
+	color: white;
+
+	}
+
+.nav-pills li:nth-of-type(7) {
+	background-color: black;
+	margin-top: 5px;
+
+	}
+
+.nav-pills li:nth-of-type(7) a {
+	color: white;
+
+	}
+
+
+.nav-pills li:nth-of-type(9) {
+	background-color: black;
+	margin-top: 5px;
+
+	}
+
+.nav-pills li:nth-of-type(9) a {
+	color: white;
+
+	}
+
+.nav-pills li{
+	background-color: #bfbdbd;
+
+
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav-pills li a{
+	font-size: 11px;
+}
+
+.form-inline {
+	margin-right: 2px;
+}
+
+.btn-outline-dark{
+  height: 3px;
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 10px;
+
+}
+
+.bmi-form {
+
+    border: 2px solid #929292;
+    background-color: #bfbdbd;
+    width: 220px;
+    float: left;
+    margin-left: 2px;
+    margin-top: 60px;
+    padding: 15px 5px 15px 25px;
+    font-size: 20px;
+
+    
+    border-top-left-radius: -10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: -10px;
+    -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+
+
+
+
+}
+
+.bmi-form input{
+    width: 80%;
+    height: 25px;
+    padding:0px 5%;
+    margin-bottom: 2px;
+    border: none;
+    background-color: #fff;
+    font-family: arial;
+    font-size: 12px;
+    color: #111;
+    line-height: 40px;
+    border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+
+}
+.bmi-form button{
+     display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 35px;
+    
+    
+    border: none;
+    background-color: #222;
+    font-family: arial;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+
+} 
+.bmi-form h4{
+   font-size: 1.2em; 
+   font-family:Freestyle Script;
+
+}
+
+.bmi-form span input{
+    width: 40%;
+    height: 40px;
+    margin-bottom: 2px;
+}
+
+.bmi-form button:hover{
+
+    background-color: #111;
+}
+
+.pe {
+    font-size: 25px; 
+    width: 220px;
+    height: 222px;
+    border: 2px solid #929292;
+    background-color: #bfbdbd;
+    margin-top: 80px;
+
+    line-height: 30px;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 2px;
+
+
+
+
+    
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family:Gabriola;
+    float: left;
+    margin-left: 22px;
+    -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+   -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+     box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    }
+
+.pe b{
+    font-size: 25px;
+}
+
+  </style>
+
+
+</head>
+<body>
+<header>
+
+<!-- nav bar -->
+
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <a class="navbar-brand" href="/home">DietCart</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/home">Home</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+        <form class="form-inline" method="post">
+			  <div class="form-group">
+			    
+			    <input type="text" name="username" class="form-control" id="uname" placeholder="User_name">
+			  </div>
+			  <div class="form-group">
+			    
+			    <input type="password" name="password" class="form-control" id="pwd" placeholder="password">
+			  </div>
+			  
+			  <button type="submit" value="Login" class="btn btn-default">Login</button>
+		</form>
+		</li>
+
+
+		<li><a href="/create" class="btn btn-outline-dark">Creat Account</a> </li>
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- side bar -->
+
+
+</header>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+    
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#section1">Health A-Z</a></li>
+        <li><a href="#section2">Living Healthy</a></li>
+        <li><a href="#section3">Family & Pregnancy</a></li>
+        <li><a href="#section4">Top 12 Topics</a></li>
+        <li><a href="#section5">Health News</a></li>
+        <li><a href="#section6">Drugs & Medications A-Z</a></li>
+
+        <li><a href="#section1">About us</a></li>
+        <li><a href="/admin">This is our new work about web based application hope it ll be good work.......</a> </li>
+        
+
+        <li><a href="#section1">Helpful Links</a></li>
+        <li><a href="https://www.webmd.com/">webmd.com</a></li>
+        <li><a href="https://www.nih.gov/">National Institutes of Health</a></li>
+        <li><a href="https://www.medicinenet.com/script/main/hp.asp">MedicineNet.com</a></li>
+        
+
+        
+      </ul><br>
+     
+    </div>
+
+
+
+    <!-- calculator -->
+
+
+    <div class="col-sm-9">
+     <p class="pe" > 
+                <b>BMI Categories:</b><br>
+                #Underweight = < 18.5<br>
+                #Normal weight = 18.5–24.9 <br>
+                #Overweight = 25–29.9 <br>
+                #Obesity = BMI of 30 or greater
+            </p>
+
+
+        <BMI class="bmi">
+
+            <form class="bmi-form" name="cal" method="post">
+            <h4>Calculate your BMI</h4>
+            <input type="text" name="weight"  placeholder="Weight(kg)">
+            <input type="text" name="height"   placeholder="Height(cm)">
+            </br>
+            <button  type="submit" name="submit">Calculate</button>
+            <!-- <button><input type="button" onClick="bmi()" ></input></button> -->
+            </br>
+            <span><input type="text" name="result" value="<% if(typeof val !== 'undefined'){ %><%= val.bmiii %><% } %>"></span>
+            
+            <!-- <% if(typeof val !== 'undefined'){ %><%= val.bmi %><% } %> -->
+            </form> 
+              
+         </BMI>
+         <div>
+          <ul>
+            <% if(typeof errs !== 'undefined'){ %>
+              <% for(var i = 0; i < errs.length; i++){ %>
+                <p><%= errs[i].message %></p>
+              <% } %>
+            <% } %>
+      </div>
+
+</div>
+</div>
+         </div>
+    	
+    </div>
+
+
+</body>
+</html>
